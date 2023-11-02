@@ -3,7 +3,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'subscription-id'
+  azureSubscription: 'f5041c80-e558-4073-902c-cd3c2262bb27'
   # Web app name
   webAppName: 'ksenol-azure-test'
   # Agent VM image name
