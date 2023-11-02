@@ -3,13 +3,13 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'Azure subscription 1'
+  azureSubscription: 'subscription-id'
   # Web app name
-  webAppName: 'ksenol-azure-test'
+  webAppName: 'web-app-name'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
   # Environment name
-  environmentName: 'ksenol-env'
+  environmentName: 'environment-name'
   # Root folder under which your composer.json file is available.
   rootFolder: $(System.DefaultWorkingDirectory)
 
@@ -17,7 +17,7 @@ stages:
 - stage: Build
   displayName: Build stage
   variables:
-    phpVersion: '8.2'
+    phpVersion: '7.4'
   jobs:
   - job: BuildJob
     pool:
